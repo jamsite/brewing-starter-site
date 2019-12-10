@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx jamsite",
-    "dev": "npx jamsite-dev",
+    "start": "npx jamsite-prod",
+    "dev": "npx jamsite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
