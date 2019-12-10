@@ -1,0 +1,13 @@
+---
+[route]
+rewrite = "whois/:domain"
+
+[data]
+whois = "{{whois-service.whois}}"
+---
+{{#> layout-default}}
+<h1>Whois result</h1>
+<pre>
+{{{whois}}}
+</pre>
+{{/layout-default}}

@@ -1,0 +1,19 @@
+---
+[route]
+repeat = "{{users}}"
+path = "{{this.id}}.html"
+rewrite = "/{{this.id}}/details"
+
+[data]
+user = "{{this}}"
+id = "{{this.id}}"
+name = "{{this.name}}"
+---
+<p>Hello from user page
+
+<pre>
+id: {{id}}
+name: {{name}}
+user.id: {{user.id}}
+user.name: {{user.name}}
+</pre>

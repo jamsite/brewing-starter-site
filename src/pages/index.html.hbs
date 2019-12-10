@@ -1,0 +1,38 @@
+---
+[route]
+path = "index.html"
+
+[data]
+meta_title = "my title"
+meta_description = "my description"
+name = "{{settings.name}}"
+arrayel1 = "{{settings.arr.[1]}}"
+arrayel00 = "{{settings.arr.[0].[0]}}"
+syncfn = "{{sync-service.syncfn}}"
+---
+{{#> layout-default}}
+<h1>Hello World from handlebars!</h1>
+<p>{{test-helper "data" "data2"}}</p>
+<p>{{> my-new-partial}}</p>
+<p><b>jamsite</b> is here...</p>
+<pre>
+uri: {{$request.url}}
+settings.name: {{settings.name}}
+name: {{name}}
+arrayel1: {{arrayel1}}
+arrayel00: {{arrayel00}}
+syncfn: {{syncfn}}
+</pre>
+<p>Internal links:</p>
+<ul>
+  <li><a href="/">/</a></li>
+  <li><a href="/index.html">/index.html</a></li>
+  <li><a href="/test.html">test-empty.html</a></li>
+  <li><a href="/test2.html">test-broken.html</a></li>
+  <li><a href="/image.svg">image.svg</a></li>
+  <li><a href="/subdir/">/subdir/</a></li>
+  <li><a href="/subdir/index.html">/subdir/index.html</a></li>
+  <li><a href="/redirect">/redirect</a></li>
+</ul>
+
+{{/layout-default}}

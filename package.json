@@ -1,0 +1,16 @@
+{
+  "name": "brewing-jamsite-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx jamsite",
+    "dev": "npx jamsite-dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "easy-whois": "^1.2.0"
+  }
+}
