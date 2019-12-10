@@ -8,10 +8,10 @@ Install jamsite and jamsite-dev globally.
 
 `npm install -g jamsite jamsite-dev`
 
-Run Jamsite in production mode:
+Run site in production mode:
 
 `npm start`
 
-Run Jamsite in development mode: 
+Run site in development mode: 
 
 `npm run dev`
