@@ -11,6 +11,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "easy-whois": "^1.2.0"
+    "easy-whois": "^1.2.0",
+    "micro-helmet": "^1.0.1"
   }
 }
