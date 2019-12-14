@@ -6,7 +6,7 @@ Jamsite starter site.
 
 Install jamsite and jamsite-dev globally.
 
-`npm install -g jamsite jamsite-dev`
+`npm install -g @jamsite/jamsite @jamsite/jamsite-dev`
 
 Run site in production mode:
 
