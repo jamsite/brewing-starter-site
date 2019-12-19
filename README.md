@@ -4,14 +4,14 @@ Jamsite starter site.
 
 ## Usage
 
-Install jamsite and jamsite-dev globally.
+Install npm depencencies:
 
-`npm install -g @jamsite/jamsite @jamsite/jamsite-dev`
+`npm i`
 
 Run site in production mode:
 
 `npm start`
 
-Run site in development mode: 
+Run site in development mode:
 
 `npm run dev`
