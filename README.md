@@ -1,6 +1,6 @@
 # playground-site
 
-Jamsite starter site.
+Jamsite playground site for trying out features.
 
 ## Install
 
