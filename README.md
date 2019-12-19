@@ -1,4 +1,4 @@
-# starter-site
+# playground-site
 
 Jamsite starter site.
 
