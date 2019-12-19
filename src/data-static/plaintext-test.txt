@@ -1,3 +1,6 @@
 plan text
 file
 content
+new line
+another line
+lorem ipsum
