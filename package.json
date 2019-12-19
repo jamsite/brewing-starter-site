@@ -17,6 +17,6 @@
     "micro-helmet": "^1.0.1"
   },
   "devDependencies": {
-    "@jamsite/jamsite-dev": "0.0.9"
+    "@jamsite/jamsite-dev": "0.0.10"
   }
 }
