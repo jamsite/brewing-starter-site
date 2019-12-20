@@ -1,7 +1,7 @@
 {
   "errors": {
-    "404": "/errors/404.html",
-    "50x": "/errors/50x.html"
+    "404": "/__errors/404.html",
+    "50x": "/__errors/50x.html"
   },
   "redirects": [{
     "source": "/beta",
