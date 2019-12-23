@@ -21,3 +21,7 @@ Test performance (keep production server running):
 Run site in development mode:
 
 `npm run dev`
+
+Run site with node inspector enabled (chrome://inspect/):
+
+`npm run inspect`
