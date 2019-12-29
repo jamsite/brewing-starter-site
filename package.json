@@ -23,7 +23,7 @@
     "micro-helmet": "^1.0.1"
   },
   "devDependencies": {
-    "@jamsite/jamsite-dev": "0.0.12",
+    "@jamsite/jamsite-dev": "0.0.13",
     "rollup": "^1.27.14",
     "rollup-plugin-output-manifest": "^1.0.2",
     "webpack": "^4.41.5",
