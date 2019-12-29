@@ -8,6 +8,7 @@
     "inspect": "npx --node-arg=--inspect jamsite-prod",
     "dev": "npx jamsite",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run webpack:bundle && npm run rollup:bundle",
     "webpack:dev": "npx webpack -w",
     "webpack:bundle": "npx webpack",
     "rollup:dev": "npx rollup -cw",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@jamsite/jamsite-dev": "0.0.12",
     "rollup": "^1.27.14",
+    "rollup-plugin-output-manifest": "^1.0.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-manifest-plugin": "^2.2.0"
