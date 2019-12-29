@@ -1,7 +1,7 @@
 const path = require('path')
 const ManifestPlugin = require('webpack-manifest-plugin')
 
-const src = __dirname
+const src = path.join(__dirname, 'src')
 
 module.exports = {
   mode: 'development',
