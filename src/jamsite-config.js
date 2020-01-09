@@ -1,22 +1,19 @@
 module.exports = {
   scripts: {
-    // commands to run before % jamsite build
-    // can be executed directly % jamsite build:webpack
     build: {
       webpack: [
-        'npm run webpack:bundle'
+        'npx webpack'
       ],
       rollup: [
-        'npm run rollup:bundle'
+        'npx rollup -c'
       ]
     },
-    // commands to run before % jamsite --watch
-    watch: {
+    'start-dev': {
       webpack: [
-        'npm run webpack:dev'
+        'npx webpack -w'
       ],
       rollup: [
-        'npm run rollup:dev'
+        'npx rollup -cw'
       ]
     }
   },
