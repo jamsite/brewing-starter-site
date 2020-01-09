@@ -1,7 +1,7 @@
 {
-  "name": "playground-site",
+  "name": "@jamsite/site-playground",
   "version": "1.0.0",
-  "description": "Trying out features.",
+  "description": "Trying out Jamsite features.",
   "main": "index.js",
   "scripts": {
     "start": "npx jamsite",
