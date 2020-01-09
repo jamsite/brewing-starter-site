@@ -4,9 +4,9 @@
   "description": "Trying out Jamsite features.",
   "main": "index.js",
   "scripts": {
-    "start": "npx jamsite",
-    "inspect": "npx --node-arg=--inspect jamsite",
-    "dev": "npx jamsite-dev",
+    "start": "npx jamsite start",
+    "inspect": "npx --node-arg=--inspect jamsite start",
+    "dev": "npx jamsite start-dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run webpack:bundle && npm run rollup:bundle",
     "webpack:dev": "npx webpack -w",
@@ -17,14 +17,14 @@
   "author": "Aleksandr Tsertkov <tsertkov@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@jamsite/jamsite": "0.0.15",
+    "@jamsite/jamsite": "0.0.16",
     "easy-whois": "^1.2.0",
     "handlebars-helpers": "^0.10.0",
     "micro-helmet": "^1.0.1"
   },
   "devDependencies": {
-    "@jamsite/jamsite-dev": "0.0.20",
-    "rollup": "^1.28.0",
+    "@jamsite/jamsite-dev": "0.0.21",
+    "rollup": "^1.29.0",
     "rollup-plugin-output-manifest": "^1.0.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
