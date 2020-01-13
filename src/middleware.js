@@ -1,3 +1,5 @@
 const helmet = require('micro-helmet')
 
-module.exports = (jamsiteHandler) => helmet(jamsiteHandler)
+module.exports = function helmetMiddleware (jamsiteHandler) {
+  return helmet(jamsiteHandler)
+}
