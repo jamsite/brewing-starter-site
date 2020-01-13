@@ -9,6 +9,7 @@ user = "{{this}}"
 id = "{{this.id}}"
 name = "{{this.name}}"
 ---
+{{#> layout-default}}
 <p>Hello from user page
 
 <pre>
@@ -17,3 +18,4 @@ name: {{name}}
 user.id: {{user.id}}
 user.name: {{user.name}}
 </pre>
+{{/layout-default}}
