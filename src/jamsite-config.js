@@ -18,14 +18,13 @@ module.exports = {
     }
   },
   plugins: [
-    '@jamsite/handlebars-helpers-autoloader',
-    '@jamsite/transform-wp',
-    '@jamsite/source-github',
-    '@jamsite/source-gist',
+    '@jamsite/plugin-transform-wp',
+    '@jamsite/plugin-source-github',
+    '@jamsite/plugin-source-gist',
     {
-      resolve: '@jamsite/source-wp',
+      resolve: '@jamsite/plugin-source-wp',
       options: {
-        endpoint: 'https://cms.tokenguru.net/dansk-casino/wp-json/wp/v2',
+        endpoint: 'https://example.com/wp-json/wp/v2',
         exclude: ['post', 'page', 'attachment']
       }
     }, {
