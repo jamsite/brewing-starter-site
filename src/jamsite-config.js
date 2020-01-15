@@ -18,6 +18,7 @@ module.exports = {
     }
   },
   plugins: [
+    '@jamsite/plugin-helmet',
     {
       resolve: '@jamsite/plugin-source-wp',
       options: {
