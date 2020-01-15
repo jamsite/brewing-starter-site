@@ -1,5 +1,6 @@
-const helmet = require('micro-helmet')
-
-module.exports = function helmetMiddleware (jamsiteHandler) {
-  return helmet(jamsiteHandler)
+module.exports = function customSiteMiddleware (jamsiteHandler) {
+  return async function middleware (req, res) {
+    console.log('custom middleware:', 'log request', req.url)
+    return jamsiteHandler(req, res)
+  }
 }
