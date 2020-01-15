@@ -18,6 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "@jamsite/jamsite": "0.0.18",
+    "@jamsite/plugin-source-wp": "0.0.2",
     "easy-whois": "^1.2.0",
     "handlebars-helpers": "^0.10.0",
     "micro-helmet": "^1.0.1"
