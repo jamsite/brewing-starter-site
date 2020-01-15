@@ -18,12 +18,13 @@ module.exports = {
     }
   },
   plugins: [
-    '@jamsite/plugin-transform-wp',
-    '@jamsite/plugin-source-github',
-    '@jamsite/plugin-source-gist',
+    // '@jamsite/plugin-transform-wp',
+    // '@jamsite/plugin-source-github',
+    // '@jamsite/plugin-source-gist',
     {
       resolve: '@jamsite/plugin-source-wp',
       options: {
+        // refreshCache: true,
         endpoint: 'https://example.com/wp-json/wp/v2',
         exclude: ['post', 'page', 'attachment']
       }
