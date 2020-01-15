@@ -19,7 +19,7 @@
   "dependencies": {
     "@jamsite/jamsite": "0.0.19",
     "@jamsite/plugin-source-wp": "0.0.3",
-    "@jamsite/plugin-transform-wp": "0.0.2",
+    "@jamsite/plugin-transform-wp": "0.0.3",
     "easy-whois": "^1.2.0",
     "handlebars-helpers": "^0.10.0",
     "micro-helmet": "^1.0.1"
