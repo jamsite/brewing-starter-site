@@ -47,8 +47,6 @@ module.exports = {
       }
     },
     '@jamsite/plugin-transform-wp'
-    // '@jamsite/plugin-source-github',
-    // '@jamsite/plugin-source-gist',
   ],
   errors: {
     404: '/__errors/404.html',
