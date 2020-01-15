@@ -18,9 +18,6 @@ module.exports = {
     }
   },
   plugins: [
-    // '@jamsite/plugin-transform-wp',
-    // '@jamsite/plugin-source-github',
-    // '@jamsite/plugin-source-gist',
     {
       resolve: '@jamsite/plugin-source-wp',
       options: {
@@ -47,7 +44,10 @@ module.exports = {
         },
         secret: process.env.PREVIEW_SECRET
       }
-    }
+    },
+    '@jamsite/plugin-transform-wp'
+    // '@jamsite/plugin-source-github',
+    // '@jamsite/plugin-source-gist',
   ],
   errors: {
     404: '/__errors/404.html',
