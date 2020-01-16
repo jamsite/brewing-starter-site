@@ -14,10 +14,6 @@ Run site in production mode:
 
 `npm start`
 
-Test performance (keep production server running):
-
-`./test-performance.sh`
-
 Run site in development mode:
 
 `npm run dev`
