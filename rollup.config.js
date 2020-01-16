@@ -14,5 +14,8 @@ export default {
       publicPath: '/scripts/',
       fileName: path.join(src, 'data-static', 'rollup-manifest.json'),
     })
-  ]
+  ],
+  watch: {
+    clearScreen: false
+  }
 }
