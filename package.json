@@ -22,8 +22,7 @@
     "@jamsite/plugin-source-wp": "0.0.4",
     "@jamsite/plugin-transform-wp": "0.0.3",
     "easy-whois": "^1.2.0",
-    "handlebars-helpers": "^0.10.0",
-    "micro-helmet": "^1.0.1"
+    "handlebars-helpers": "^0.10.0"
   },
   "devDependencies": {
     "@jamsite/jamsite-dev": "0.0.26",
