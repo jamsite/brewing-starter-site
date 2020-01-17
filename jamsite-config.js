@@ -49,37 +49,25 @@ module.exports = {
     '@jamsite/plugin-transform-wp'
   ],
   errors: {
-    404: '/__errors/404.html',
-    '50x': '/__errors/50x.html'
+    '404': '/error404.html',
+    '50x': '/error50x.html'
   },
-  redirects: [{
-    source: '/beta',
-    destination: '/',
-    type: 301
-  }],
-  headers: [{
-    source: '**/*.js',
-    headers: [{
-      key: '',
-      value: ''
-    }]
-  }, {
-    source: '**/*',
-    headers: [{
-      key: 'Content-Security-Policy',
-      value: 'default-src "none"; img-src "self"; script-src "self"; style-src "self"'
-    }, {
-      key: 'X-Content-Type-Options',
-      value: 'nosniff'
-    }, {
-      key: 'X-Frame-Option',
-      value: 'DENY'
-    }, {
-      key: 'Strict-Transport-Security',
-      value: 'max-age=63072000; includeSubDomains; preload'
-    }, {
-      key: 'Public-Key-Pins',
-      value: 'max-age=1296000; includeSubDomains; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=";pin-sha256="YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg="; pin-sha256="P0NdsLTMT6LSwXLuSEHNlvg4WxtWb5rIJhfZMyeXUE0="'
-    }]
-  }]
+  static: {
+    // https://github.co  m/zeit/serve-handler#redirects-array
+    redirects: [{
+      source: '/beta',
+      destination: '/',
+      type: 301
+    }],
+    // https://github.com/zeit/serve-handler#headers-array
+    headers: [
+      {
+        source: '**/*',
+        headers: [{
+          key: 'X-MY-MAYA',
+          value: 'MAYA!'
+        }]
+      }
+    ]
+  }
 }
