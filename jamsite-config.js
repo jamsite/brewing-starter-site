@@ -49,8 +49,7 @@ module.exports = {
     '@jamsite/plugin-transform-wp'
   ],
   errors: {
-    '404': '/error404.html',
-    '50x': '/error50x.html'
+    '404': '/__errors/404.html'
   },
   static: {
     // https://github.co  m/zeit/serve-handler#redirects-array
