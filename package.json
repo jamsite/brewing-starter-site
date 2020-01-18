@@ -17,7 +17,7 @@
   "author": "Aleksandr Tsertkov <tsertkov@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@jamsite/jamsite": "0.0.22",
+    "@jamsite/jamsite": "0.0.23",
     "@jamsite/plugin-helmet": "0.0.1",
     "@jamsite/plugin-source-wp": "0.0.4",
     "@jamsite/plugin-transform-wp": "0.0.3",
@@ -25,7 +25,7 @@
     "handlebars-helpers": "^0.10.0"
   },
   "devDependencies": {
-    "@jamsite/jamsite-dev": "0.0.28",
+    "@jamsite/jamsite-dev": "0.0.29",
     "rollup": "^1.29.0",
     "rollup-plugin-output-manifest": "^1.0.2",
     "webpack": "^4.41.5",
