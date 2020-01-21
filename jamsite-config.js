@@ -46,7 +46,8 @@ module.exports = {
         secret: process.env.PREVIEW_SECRET
       }
     },
-    '@jamsite/plugin-transform-wp'
+    '@jamsite/plugin-transform-wp',
+    '@jamsite/plugin-robots-txt'
   ],
   errors: {
     '404': '/__errors/404.html'

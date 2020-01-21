@@ -17,16 +17,17 @@
   "author": "Aleksandr Tsertkov <tsertkov@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@jamsite/jamsite": "0.0.23",
+    "@jamsite/jamsite": "0.0.24",
     "@jamsite/plugin-helmet": "0.0.1",
+    "@jamsite/plugin-robots-txt": "0.0.1",
     "@jamsite/plugin-source-wp": "0.0.4",
     "@jamsite/plugin-transform-wp": "0.0.3",
     "easy-whois": "^1.2.0",
     "handlebars-helpers": "^0.10.0"
   },
   "devDependencies": {
-    "@jamsite/jamsite-dev": "0.0.29",
-    "rollup": "^1.29.0",
+    "@jamsite/jamsite-dev": "0.0.30",
+    "rollup": "^1.29.1",
     "rollup-plugin-output-manifest": "^1.0.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
