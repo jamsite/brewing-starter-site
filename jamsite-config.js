@@ -1,4 +1,5 @@
 module.exports = {
+  // basePath: '/prefix/',
   scripts: {
     build: {
       webpack: [
@@ -54,7 +55,7 @@ module.exports = {
     '404': '/__errors/404.html'
   },
   static: {
-    // https://github.co  m/zeit/serve-handler#redirects-array
+    // https://github.com/zeit/serve-handler#redirects-array
     redirects: [{
       source: '/beta',
       destination: '/',
