@@ -14,9 +14,7 @@ syncfn = "{{sync-service.syncfn}}"
 <h1>Hello World from handlebars!</h1>
 <p>{{test-helper "data" "data2"}}</p>
 <p>{{> my-new-partial}}</p>
-<p><b>jamsite</b> is here...</p>
 <pre>
-uri: {{$request.url}}
 settings.name: {{settings.name}}
 name: {{name}}
 arrayel1: {{arrayel1}}
@@ -25,21 +23,24 @@ syncfn: {{syncfn}}
 toml-test: {{toml-test.somekey}}
 api-key: {{settings.apiKey}}
 </pre>
+$config: {{{_inspect $.config}}}
+$request: {{{_inspect $.request}}}
 <p>Internal links:</p>
 <ul>
-  <li><a href="/">/</a></li>
-  <li><a href="/index.html">/index.html</a></li>
-  <li><a href="/test.html">test-empty.html</a></li>
-  <li><a href="/test2.html">test-broken.html</a></li>
-  <li><a href="/image.svg">image.svg</a></li>
-  <li><a href="/subdir/">/subdir/</a></li>
-  <li><a href="/subdir/index.html">/subdir/index.html</a></li>
-  <li><a href="/redirect">/redirect</a></li>
-  <li><a href="/no-template.html">/no-template.html</a></li>
-  <li><a href="/no-template-no-frontmatter.html">/no-template-no-frontmatter.html</a></li>
-  <li><a href="/md-test.html">/md-test.html</a></li>
-  <li><a href="/plaintext-test.html">/plaintext-test.html</a></li>
-  <li><a href="/handlebars-helpers.html">/handlebars-helpers.html</a></li>
+  <li><a href="{{$.config.url}}{{$.config.basePath}}">{{$.config.url}}{{$.config.basePath}}</a></li>
+  <li><a href="{{$.config.basePath}}">{{$.config.basePath}}</a></li>
+  <li><a href="{{$.config.basePath}}index.html">{{$.config.basePath}}index.html</a></li>
+  <li><a href="{{$.config.basePath}}test.html">{{$.config.basePath}}test-empty.html</a></li>
+  <li><a href="{{$.config.basePath}}test2.html">{{$.config.basePath}}test-broken.html</a></li>
+  <li><a href="{{$.config.basePath}}image.svg">{{$.config.basePath}}image.svg</a></li>
+  <li><a href="{{$.config.basePath}}subdir/">{{$.config.basePath}}subdir/</a></li>
+  <li><a href="{{$.config.basePath}}subdir/index.html">{{$.config.basePath}}subdir/index.html</a></li>
+  <li><a href="{{$.config.basePath}}redirect">{{$.config.basePath}}redirect</a></li>
+  <li><a href="{{$.config.basePath}}no-template.html">{{$.config.basePath}}no-template.html</a></li>
+  <li><a href="{{$.config.basePath}}no-template-no-frontmatter.html">{{$.config.basePath}}no-template-no-frontmatter.html</a></li>
+  <li><a href="{{$.config.basePath}}md-test.html">{{$.config.basePath}}md-test.html</a></li>
+  <li><a href="{{$.config.basePath}}plaintext-test.html">{{$.config.basePath}}plaintext-test.html</a></li>
+  <li><a href="{{$.config.basePath}}handlebars-helpers.html">{{$.config.basePath}}handlebars-helpers.html</a></li>
 </ul>
 
 {{/layout-default}}
