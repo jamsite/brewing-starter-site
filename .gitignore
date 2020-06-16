@@ -1,3 +1,5 @@
 .env
 node_modules/
 var/
+.yalc/
+yalc.lock
