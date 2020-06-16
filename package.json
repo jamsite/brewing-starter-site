@@ -17,7 +17,7 @@
   "author": "Aleksandr Tsertkov <tsertkov@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@jamsite/jamsite": "0.0.25",
+    "@jamsite/jamsite": "0.0.29",
     "@jamsite/plugin-helmet": "0.0.1",
     "@jamsite/plugin-robots-txt": "0.0.2",
     "@jamsite/plugin-sitemap-xml": "0.0.1",
@@ -27,11 +27,11 @@
     "handlebars-helpers": "^0.10.0"
   },
   "devDependencies": {
-    "@jamsite/jamsite-dev": "0.0.31",
-    "rollup": "^1.29.1",
+    "@jamsite/jamsite-dev": "0.0.35",
+    "rollup": "^2.16.1",
     "rollup-plugin-output-manifest": "^1.0.2",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
     "webpack-manifest-plugin": "^2.2.0"
   }
 }
